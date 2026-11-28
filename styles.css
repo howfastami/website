@@ -344,7 +344,43 @@ h2 { font-size: clamp(2.8rem, 5.5vw, 5.4rem); font-weight: 900; text-transform: 
 }
 
 .download { overflow: hidden; }
-.download-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .65fr); align-items: center; gap: clamp(1.5rem, 4vw, 3rem); min-height: 470px; padding: clamp(2rem, 6vw, 5rem); border-radius: 38px; overflow: hidden; color: #050605; background: var(--acid); box-shadow: 0 30px 90px rgba(255,240,0,.12); }
+.download-card { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .65fr); align-items: center; gap: clamp(1.5rem, 4vw, 3rem); min-height: 470px; padding: clamp(2rem, 6vw, 5rem); border-radius: 38px; overflow: hidden; color: #050605; background: var(--acid); box-shadow: 0 30px 90px rgba(255,240,0,.12); }
+/* Flutter InsetSheenPainter: 46 × 2.4 px band, .38 rad tilt, 2 s sweep
+   followed by the button's 3 s repeat delay. */
+@media (prefers-reduced-motion: no-preference) {
+  .download-card[data-visible='true']::before,
+  .download-card[data-visible='true']::after {
+    --sheen-width: 110.4px;
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -70%;
+    left: calc(-1.5 * var(--sheen-width));
+    width: var(--sheen-width);
+    height: 240%;
+    transform: rotate(.38rad);
+    pointer-events: none;
+    animation: download-sheen-travel 5s linear infinite,
+      download-sheen-envelope 5s ease-in-out infinite;
+  }
+  .download-card[data-visible='true']::before {
+    background: linear-gradient(90deg, transparent, rgb(255 255 255 / 68%), transparent);
+    mix-blend-mode: screen;
+  }
+  .download-card[data-visible='true']::after {
+    background: linear-gradient(90deg, transparent, rgb(255 240 0 / 22%), transparent);
+    mix-blend-mode: saturation;
+  }
+}
+@keyframes download-sheen-travel {
+  0% { left: calc(-1.5 * var(--sheen-width)); }
+  40%, 100% { left: calc(100% + .5 * var(--sheen-width)); }
+}
+@keyframes download-sheen-envelope {
+  0%, 40% { opacity: .2; }
+  8%, 32% { opacity: 1; }
+  40.01%, 100% { opacity: 0; }
+}
 .download-card h2 { max-width: 690px; font-size: clamp(3rem, 7vw, 6.8rem); }
 .download-card p { max-width: 610px; font-size: 1.25rem; font-weight: 600; }
 .download-card .store-button { background: #090b0a; color: #fff; border-color: #090b0a; }
