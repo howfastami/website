@@ -209,12 +209,14 @@ h1 em.hero-accent { font-style: italic; font-synthesis: style; }
     animation: hero-phone-hover 9s ease-in-out infinite;
   }
   .dash-toggle[data-visible='true'] .dash-toggle-lit {
-    animation: dash-toggle-ignite 2.4s step-end both;
+    animation: dash-toggle-ignite 2.9s step-end both;
   }
 }
 @keyframes dash-toggle-ignite {
-  0%, 40%, 72% { opacity: 0; }
-  24%, 59%, 90%, 100% { opacity: 1; }
+  0%, 15.7%, 30%, 44.4%, 58.7%, 73.1%, 87.4% { opacity: 0; }
+  9.4%, 38.1%, 66.8% { opacity: .75; }
+  24.2%, 52.9%, 81.6% { opacity: .95; }
+  96.4%, 100% { opacity: 1; }
 }
 @media (max-width: 700px) {
   .dash-layout { grid-template-columns: minmax(0, 1fr); grid-template-areas: 'copy' 'toggle'; }
