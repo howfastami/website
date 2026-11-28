@@ -255,7 +255,7 @@ h2 { font-size: clamp(2.8rem, 5.5vw, 5.4rem); font-weight: 900; text-transform: 
 .result-example-stack figure {
   position: relative;
   margin: 0;
-  transform: perspective(950px) rotateY(-11deg) rotateZ(13deg);
+  transform: perspective(650px) rotateX(20deg) rotateY(-24deg) rotateZ(12deg);
 }
 .result-example-stack .result-example-scoreboard {
   z-index: 3;
