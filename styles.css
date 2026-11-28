@@ -233,6 +233,35 @@ h2 { font-size: clamp(2.8rem, 5.5vw, 5.4rem); font-weight: 900; text-transform: 
 .step h3 { font-size: 1.7rem; text-transform: uppercase; }
 .step p { color: var(--muted); }
 
+.result-example {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+  gap: 1.25rem;
+  max-width: 860px;
+  margin-top: 2rem;
+  scroll-margin-top: 95px;
+}
+.result-example figure { width: 100%; max-width: 410px; margin: 0; }
+.result-example-scoreboard { grid-column: 1 / -1; }
+.result-example-media {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #101510;
+}
+.result-example-media img { width: 100%; height: auto; }
+.result-example-media video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+.result-example-media video[data-playing] { opacity: 1; }
+.result-example figcaption { padding: .45rem .6rem 0; color: var(--muted); }
+.result-example figcaption strong { color: var(--ink); }
+
 .download { overflow: hidden; }
 .download-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .65fr); align-items: center; gap: clamp(1.5rem, 4vw, 3rem); min-height: 470px; padding: clamp(2rem, 6vw, 5rem); border-radius: 38px; overflow: hidden; color: #050605; background: var(--acid); box-shadow: 0 30px 90px rgba(255,240,0,.12); }
 .download-card h2 { max-width: 690px; font-size: clamp(3rem, 7vw, 6.8rem); }

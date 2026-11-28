@@ -95,6 +95,32 @@
   });
 
   const revealNodes = document.querySelectorAll('[data-reveal]');
+  const resultAnimations = document.querySelectorAll('[data-result-animation]');
+  if (resultAnimations.length && 'IntersectionObserver' in window) {
+    const resultObserver = new IntersectionObserver((entries, observer) => {
+      for (const { intersectionRatio, target: video } of entries) {
+        if (intersectionRatio < .55 || reducedMotion.matches) continue;
+        observer.unobserve(video);
+        video.play().catch(() => {
+          // The static result remains visible if autoplay is blocked.
+        });
+      }
+    }, { threshold: .55 });
+
+    resultAnimations.forEach((video) => {
+      video.addEventListener('playing', () => {
+        if (!reducedMotion.matches) video.setAttribute('data-playing', '');
+      }, { once: true });
+      resultObserver.observe(video);
+    });
+    reducedMotion.addEventListener('change', () => {
+      if (!reducedMotion.matches) return;
+      resultAnimations.forEach((video) => {
+        video.pause();
+        video.removeAttribute('data-playing');
+      });
+    });
+  }
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const observer = new IntersectionObserver(
       (entries) => {
