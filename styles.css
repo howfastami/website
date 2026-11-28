@@ -190,15 +190,16 @@ h1 em.hero-accent { font-style: italic; font-synthesis: style; }
 
 .dash-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(200px, .58fr);
+  grid-template-columns: minmax(220px, .65fr) minmax(0, 1fr);
+  grid-template-areas: 'toggle copy';
   align-items: center;
   gap: clamp(1.75rem, 6vw, 5rem);
 }
-.dash-layout .section-heading { margin-bottom: 0; }
-.dash-toggle { width: min(82%, 240px); justify-self: center; }
+.dash-layout .section-heading { grid-area: copy; margin-bottom: 0; }
+.dash-toggle { grid-area: toggle; width: min(85%, 285px); justify-self: center; }
 .dash-toggle-tilt {
   display: grid;
-  transform: perspective(610px) rotateX(14deg) rotateY(-23deg) rotateZ(11deg);
+  transform: perspective(610px) rotateX(14deg) rotateY(23deg) rotateZ(-11deg);
   filter: drop-shadow(0 20px 18px #000b);
 }
 .dash-toggle-tilt img { grid-area: 1 / 1; width: 100%; height: auto; }
@@ -207,18 +208,16 @@ h1 em.hero-accent { font-style: italic; font-synthesis: style; }
     animation: hero-phone-hover 9s ease-in-out infinite;
   }
   .dash-toggle[data-visible='true'] .dash-toggle-lit {
-    animation: dash-toggle-ignite 1.3s step-end both;
+    animation: dash-toggle-ignite 2.4s step-end both;
   }
 }
 @keyframes dash-toggle-ignite {
-  0%, 35%, 67% { opacity: 0; }
-  21% { opacity: .75; }
-  54% { opacity: .95; }
-  87%, 100% { opacity: 1; }
+  0%, 40%, 72% { opacity: 0; }
+  24%, 59%, 90%, 100% { opacity: 1; }
 }
 @media (max-width: 700px) {
-  .dash-layout { grid-template-columns: minmax(0, 1fr); }
-  .dash-toggle { width: min(65%, 200px); }
+  .dash-layout { grid-template-columns: minmax(0, 1fr); grid-template-areas: 'copy' 'toggle'; }
+  .dash-toggle { width: min(72%, 225px); }
 }
 
 .share-layout {
@@ -282,7 +281,7 @@ h2 { font-size: clamp(2.8rem, 5.5vw, 5.4rem); font-weight: 900; text-transform: 
   position: relative;
   width: min(96%, 410px);
   margin: 0 auto 1.6rem;
-  transform: perspective(760px) rotateY(10deg);
+  transform: perspective(760px) rotateY(-10deg);
 }
 .result-example-stack {
   grid-area: stack;
