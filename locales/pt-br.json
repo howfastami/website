@@ -246,5 +246,10 @@
   "Purchase and rewarded-ad transaction identifiers may remain in de-identified form so the same transaction cannot be claimed more than once. App-store transaction records remain with Apple or Google under their policies. Backups and logs may persist temporarily before routine deletion, and information may be retained if required by law or necessary to resolve fraud, security, or legal issues.": "Identificadores de compra e transações de anúncios recompensáveis podem permanecer em forma desidentificada, de modo que a mesma transação não possa ser reclamada mais de uma vez. Registros de transação do App Store permanecem com o Apple ou o Google de acordo com suas políticas. Backup e logs podem persistir temporariamente antes da exclusão regular, e a informação pode ser mantida se necessário para resolver fraudes, segurança ou questões legais.",
   "Deleting the account does not cancel or refund purchases. A non-consumable Premium entitlement may be restorable from the same store account if you start again.": "A exclusão da conta não cancela ou reembolsa compras. Uma entidade premium não consumível pode ser restaurável da mesma conta de loja se você começar novamente.",
   "Questions? Contact {1}support@howfastami.app{/1}.": "Perguntas? Entre em contato com {1}support@howfastami.app{/1}.",
-  "© {1}2026{/1} How Fast Am I.": "© {1}2026{/1} How Fast Am I."
+  "© {1}2026{/1} How Fast Am I.": "© {1}2026{/1} How Fast Am I.",
+  "Input time": "Tempo informado",
+  "Input distance": "Distância informada",
+  "100m time": "Tempo nos 100 m",
+  "Speed rating": "Pontuação de velocidade",
+  "Speed": "Velocidade"
 }

@@ -246,5 +246,10 @@
   "Deletion removes the account’s cloud profile, username reservation, leaderboard entries, squad and athlete ownership, progression, race submissions and personal bests, balances, tickets, badges, reward records associated with the account, and Firebase anonymous authentication account. The App also clears locally stored profile, history, cache, and gameplay data on the device that completes deletion.": "يؤدي الحذف إلى إزالة الملف الشخصي السحابي للحساب، وحجز اسم المستخدم، وإدخالات لوحات الصدارة، وملكية الفريق والرياضيين، والتقدّم، ونتائج السباقات المقدّمة والأرقام الشخصية، والأرصدة، والتذاكر، والشارات، وسجلات المكافآت المرتبطة بالحساب، وحساب المصادقة المجهول على Firebase. يمحو التطبيق أيضًا الملف الشخصي والسجل وذاكرة التخزين المؤقت وبيانات اللعب المحفوظة محليًا على الجهاز الذي تتم عليه عملية الحذف.",
   "Purchase and rewarded-ad transaction identifiers may remain in de-identified form so the same transaction cannot be claimed more than once. App-store transaction records remain with Apple or Google under their policies. Backups and logs may persist temporarily before routine deletion, and information may be retained if required by law or necessary to resolve fraud, security, or legal issues.": "قد تبقى هوية المشتري والهوية المرتبطة بالإعلانات المكافئة في شكل غير مُحدد، بحيث لا يمكن الاعتراض على نفس المعاملة أكثر من مرة واحدة. تبقى سجلات المعاملات من متجر التطبيقات مع Apple أو Google وفقًا لسياساتهما. قد تبقى نسخ الحفظ والسجلات مؤقتًا قبل الحذف المنتظم، ويمكن أن تُحتفظ المعلومات إذا كان ذلك مطلوبًا قانونيًا أو ضروريًا لحل الاحتيال أو الأمان أو القضايا القانونية.",
   "Deleting the account does not cancel or refund purchases. A non-consumable Premium entitlement may be restorable from the same store account if you start again.": "إلغاء الحساب لا يلغي أو يعيد تأمين المشتريات. قد يتم إعادة تفعيل الانتسابات المميزة من نفس حساب المتجر إذا بدأت من جديد.",
-  "Questions? Contact {1}support@howfastami.app{/1}.": "هل لديك أسئلة؟ اتصل {1}support@howfastami.app{/1}."
+  "Questions? Contact {1}support@howfastami.app{/1}.": "هل لديك أسئلة؟ اتصل {1}support@howfastami.app{/1}.",
+  "Input time": "الزمن المُدخل",
+  "Input distance": "المسافة المُدخلة",
+  "100m time": "زمن 100 متر",
+  "Speed rating": "تقييم السرعة",
+  "Speed": "السرعة"
 }

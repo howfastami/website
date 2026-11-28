@@ -421,6 +421,7 @@ h2 { font-size: clamp(2.8rem, 5.5vw, 5.4rem); font-weight: 900; text-transform: 
 .result-example-stack figure:nth-child(3) { margin-block-start: -1.4rem; }
 .result-example-media {
   position: relative;
+  container-type: inline-size;
   overflow: hidden;
   border-radius: 16px;
   background: #101510;
@@ -436,6 +437,27 @@ h2 { font-size: clamp(2.8rem, 5.5vw, 5.4rem); font-weight: 900; text-transform: 
   pointer-events: none;
 }
 .result-example-media video[data-playing] { opacity: 1; }
+.result-labels {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  display: flex;
+  justify-content: center;
+  transform: translateY(-50%);
+  color: rgb(255 255 255 / 65%);
+  font: 700 2.45cqw/1 system-ui, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+.result-labels-led {
+  top: 71.5%;
+  justify-content: space-between;
+  color: rgb(255 255 255 / 55%);
+  font-size: 2.65cqw;
+}
+.result-labels-speed { top: 80.5%; letter-spacing: .03em; }
+.result-labels-rating { top: 60.1%; font-size: 2cqw; letter-spacing: .07em; }
 .result-example figcaption {
   position: absolute;
   width: 1px;

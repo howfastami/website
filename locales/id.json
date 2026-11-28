@@ -246,5 +246,10 @@
   "Purchase and rewarded-ad transaction identifiers may remain in de-identified form so the same transaction cannot be claimed more than once. App-store transaction records remain with Apple or Google under their policies. Backups and logs may persist temporarily before routine deletion, and information may be retained if required by law or necessary to resolve fraud, security, or legal issues.": "Identifikasi pembelian dan transaksi iklan berbayar mungkin tetap ada dalam bentuk de-identifikasi sehingga transaksi yang sama tidak dapat dituntut lebih dari sekali. Catatan transaksi toko aplikasi tetap dengan Apple atau Google sesuai dengan kebijakan mereka. Backup dan log mungkin tetap sementara sebelum penghapusan rutin, dan informasi mungkin disimpan jika diperlukan oleh hukum atau penting untuk menyelesaikan penipuan, keamanan, atau masalah hukum.",
   "Deleting the account does not cancel or refund purchases. A non-consumable Premium entitlement may be restorable from the same store account if you start again.": "Menghapus akun tidak membatalkan atau mengembalikan pembelian. Kehormatan Premium non-consumable mungkin dapat dipulihkan dari akun toko yang sama jika Anda memulai lagi.",
   "Questions? Contact {1}support@howfastami.app{/1}.": "Pertanyaan? Hubungi {1}support@howfastami.app{/1}.",
-  "© {1}2026{/1} How Fast Am I.": "© {1}2026{/1} How Fast Am I."
+  "© {1}2026{/1} How Fast Am I.": "© {1}2026{/1} How Fast Am I.",
+  "Input time": "Waktu yang diinput",
+  "Input distance": "Jarak yang diinput",
+  "100m time": "Waktu 100 m",
+  "Speed rating": "Skor kecepatan",
+  "Speed": "Kecepatan"
 }

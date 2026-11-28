@@ -246,5 +246,10 @@
   "Deleting the account does not cancel or refund purchases. A non-consumable Premium entitlement may be restorable from the same store account if you start again.": "删除账户不会取消或退款购买。如果重新开始，非消耗性高级权限可能从同一商店账户中恢复。",
   "Questions? Contact {1}support@howfastami.app{/1}.": "有问题？联系{1}support@howfastami.app{/1}。",
   "Effective: 27 November 2026 · Last updated: 27 November 2026": "生效日期：2026年11月27日 · 最后更新：2026年11月27日",
-  "© {1}2026{/1} How Fast Am I.": "© {1}2026{/1} How Fast Am I."
+  "© {1}2026{/1} How Fast Am I.": "© {1}2026{/1} How Fast Am I.",
+  "Input time": "输入时间",
+  "Input distance": "输入距离",
+  "100m time": "100 米用时",
+  "Speed rating": "速度评分",
+  "Speed": "速度"
 }

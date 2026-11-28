@@ -246,5 +246,10 @@
   "Deleting the account does not cancel or refund purchases. A non-consumable Premium entitlement may be restorable from the same store account if you start again.": "অ্যাকাউন্ট মুছলে কেনাকাটা বাতিল হয় না বা টাকা ফেরত পাওয়া যায় না। আবার শুরু করলে একই স্টোর অ্যাকাউন্ট থেকে ব্যবহারে শেষ হয় না এমন Premium সুবিধা ফেরত পাওয়া যেতে পারে।",
   "Questions? Contact {1}support@howfastami.app{/1}.": "প্রশ্ন? {1}support@howfastami.app{/1} এ যোগাযোগ করুন।",
   "How Fast Am I? — 100m Sprint Time Estimator": "How Fast Am I? — 100 মিটার স্প্রিন্টের সময়ের হিসাব",
-  "© {1}2026{/1} How Fast Am I.": "© {1}2026{/1} How Fast Am I."
+  "© {1}2026{/1} How Fast Am I.": "© {1}2026{/1} How Fast Am I.",
+  "Input time": "দেওয়া সময়",
+  "Input distance": "দেওয়া দূরত্ব",
+  "100m time": "100 মিটারের সময়",
+  "Speed rating": "গতির স্কোর",
+  "Speed": "গতি"
 }

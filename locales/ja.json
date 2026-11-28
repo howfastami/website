@@ -246,5 +246,10 @@
   "In the app’s Track Meet mode, select Male, enter 60m and 7.50 seconds, and use a block start, electronic timing, track spikes, a dry rubber track, and zero wind. Leave age and altitude blank.": "アプリの「陸上大会」モードで「男性」を選び、60 mと7.50秒を入力します。スターティングブロック、電動計時、陸上スパイク、乾いたゴム製トラック、無風を指定し、年齢と標高は空欄のままにしてください。",
   "Effective: 27 November 2026 · Last updated: 27 November 2026": "発効日：2026年11月27日 · 最終更新日：2026年11月27日",
   "We retain cloud account and gameplay data while your account is active or as needed to provide the App. When you delete your account, associated profile, leaderboard, squad, progress, and cloud gameplay data are deleted. Purchase or rewarded-ad transaction identifiers may be retained in de-identified form to prevent the same transaction being claimed twice. Information may also be retained where required by law, to resolve disputes, or protect the service.": "アカウントが有効な間、またはアプリの提供に必要な間は、クラウド上のアカウントおよびゲームプレイのデータを保持します。アカウントを削除すると、関連するプロフィール、ランキング、チーム、進行状況、クラウド上のゲームプレイデータも削除されます。同じ取引が二重に申請されるのを防ぐため、購入や報酬付き広告の取引識別子を個人を特定できない形式で保持する場合があります。また、法律で義務付けられている場合、紛争の解決またはサービスの保護に必要な場合にも、情報を保持することがあります。",
-  "© {1}2026{/1} How Fast Am I.": "© {1}2026{/1} How Fast Am I."
+  "© {1}2026{/1} How Fast Am I.": "© {1}2026{/1} How Fast Am I.",
+  "Input time": "入力タイム",
+  "Input distance": "入力距離",
+  "100m time": "100 mタイム",
+  "Speed rating": "スピード評価",
+  "Speed": "速度"
 }

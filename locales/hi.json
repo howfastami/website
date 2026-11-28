@@ -246,5 +246,10 @@
   "Purchase and rewarded-ad transaction identifiers may remain in de-identified form so the same transaction cannot be claimed more than once. App-store transaction records remain with Apple or Google under their policies. Backups and logs may persist temporarily before routine deletion, and information may be retained if required by law or necessary to resolve fraud, security, or legal issues.": "एक ही लेनदेन का एक से ज़्यादा बार दावा रोकने के लिए खरीदारी और इनाम वाले विज्ञापन के लेनदेन की पहचान संख्या ऐसे स्वरूप में रखी जा सकती है जिससे व्यक्ति की पहचान न हो। Apple या Google ऐप स्टोर के लेनदेन रिकॉर्ड अपनी नीतियों के तहत रखते हैं। बैकअप और लॉग नियमित रूप से हटाए जाने तक अस्थायी रूप से रह सकते हैं। कानूनन ज़रूरी होने या धोखाधड़ी, सुरक्षा या कानूनी मुद्दे सुलझाने के लिए भी जानकारी रखी जा सकती है।",
   "Deleting the account does not cancel or refund purchases. A non-consumable Premium entitlement may be restorable from the same store account if you start again.": "खाता हटाने से खरीदारी रद्द नहीं होती और पैसे वापस नहीं मिलते। दोबारा शुरू करने पर, ऐसा Premium अधिकार जो इस्तेमाल से खत्म नहीं होता, उसी स्टोर खाते से बहाल हो सकता है।",
   "We may update this policy as the App, providers, or legal requirements change. We will post the revised policy here and update the date above. Material changes may also be communicated in the App.": "ऐप, सेवा प्रदाता या कानूनी आवश्यकताएँ बदलने पर हम इस नीति को अपडेट कर सकते हैं। हम बदली हुई नीति यहाँ प्रकाशित करेंगे और ऊपर की तारीख बदलेंगे। बड़े बदलावों की जानकारी ऐप में भी दी जा सकती है।",
-  "Questions? Contact {1}support@howfastami.app{/1}.": "कोई सवाल है? {1}support@howfastami.app{/1} पर संपर्क करें।"
+  "Questions? Contact {1}support@howfastami.app{/1}.": "कोई सवाल है? {1}support@howfastami.app{/1} पर संपर्क करें।",
+  "Input time": "दर्ज समय",
+  "Input distance": "दर्ज दूरी",
+  "100m time": "100 मीटर का समय",
+  "Speed rating": "गति स्कोर",
+  "Speed": "गति"
 }

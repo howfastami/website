@@ -246,5 +246,10 @@
   "Effective: 27 November 2026 · Last updated: 27 November 2026": "시행일: 2026년 11월 27일 · 최종 업데이트: 2026년 11월 27일",
   "{1}Apple App Store and Google Play{/1} — app distribution, in-app purchase processing, entitlement verification, and fraud prevention.": "{1}Apple App Store 및 Google Play{/1} — 앱 배포, 앱 내 구매 처리, 이용 권한 확인 및 부정행위 방지.",
   "The App, website, software, visual design, characters, data compilations, branding, and original content are owned by us or licensed to us and are protected by law. We grant you a limited, personal, non-exclusive, non-transferable, revocable licence to use the App for its intended purpose. Store names and third-party marks belong to their respective owners.": "앱, 웹사이트, 소프트웨어, 시각 디자인, 캐릭터, 데이터 편집물, 브랜드 및 원본 콘텐츠는 당사가 소유하거나 사용권을 부여받았으며 법의 보호를 받습니다. 당사는 앱을 본래 목적에 맞게 사용할 수 있는 제한적이고 개인적이며 비독점적이고 양도할 수 없으며 철회 가능한 사용권을 귀하에게 부여합니다. 스토어 이름과 제3자의 표장은 각 소유자에게 귀속됩니다.",
-  "© {1}2026{/1} How Fast Am I.": "© {1}2026{/1} How Fast Am I."
+  "© {1}2026{/1} How Fast Am I.": "© {1}2026{/1} How Fast Am I.",
+  "Input time": "입력 시간",
+  "Input distance": "입력 거리",
+  "100m time": "100m 기록",
+  "Speed rating": "속도 점수",
+  "Speed": "속도"
 }

@@ -41,7 +41,7 @@ INLINE = {'a', 'b', 'br', 'em', 'small', 'span', 'strong'}
 BLOCK = {'a', 'button', 'figcaption', 'h1', 'h2', 'h3', 'li', 'p', 'small',
          'span', 'strong', 'summary', 'title'}
 TOKEN = re.compile(r'\{/?[0-9]+\}')
-CACHE_VERSION = 'locale-1'
+CACHE_VERSION = 'locale-2'
 GENERATED = re.compile(r'<!-- i18n:([\w-]+) -->.*?<!-- /i18n:\1 -->', re.S)
 
 

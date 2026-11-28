@@ -246,5 +246,10 @@
   "Purchase and rewarded-ad transaction identifiers may remain in de-identified form so the same transaction cannot be claimed more than once. App-store transaction records remain with Apple or Google under their policies. Backups and logs may persist temporarily before routine deletion, and information may be retained if required by law or necessary to resolve fraud, security, or legal issues.": "Alışveriş ve ödülmüş reklam işlem kimlikleri de-identifikasyon haliyle kalabilir, bu yüzden aynı işlem tekrar claim edilemez. Uygulama mağazası işlem kayıtları Apple veya Google tarafından politikalarına göre korunur. Geri yükleme ve loglar düzenli silinmeden önce geçici olarak kalabilir, yasal gereklilikler veya haksızlık, güvenlik veya yasal sorunlar için bilgi saklanabilir.",
   "Deleting the account does not cancel or refund purchases. A non-consumable Premium entitlement may be restorable from the same store account if you start again.": "Hesap silinmesi, satın alınan ürünlerden kurtarma yapmaz. Aynı mağazan hesabından tekrar başlamak suretiyle ödülmüş bir ücretli entitleman restor edilebilir.",
   "Questions? Contact {1}support@howfastami.app{/1}.": "Sorunuz var mı? {1}support@howfastami.app{/1} ile iletişime geçin.",
-  "© {1}2026{/1} How Fast Am I.": "© {1}2026{/1} How Fast Am I."
+  "© {1}2026{/1} How Fast Am I.": "© {1}2026{/1} How Fast Am I.",
+  "Input time": "Girilen süre",
+  "Input distance": "Girilen mesafe",
+  "100m time": "100 m süresi",
+  "Speed rating": "Hız puanı",
+  "Speed": "Hız"
 }

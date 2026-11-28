@@ -246,5 +246,10 @@
   "Deleting the account does not cancel or refund purchases. A non-consumable Premium entitlement may be restorable from the same store account if you start again.": "La suppression du compte ne annule pas les achats ni ne rembourse les achats. Un entitlement premium non consommable peut être restauré à partir du même compte d’achat si vous recommencez.",
   "Questions? Contact {1}support@howfastami.app{/1}.": "Des questions ? Contactez {1}support@howfastami.app{/1}.",
   "Speed rating: {1}654 out of 1,000{/1}": "Score de vitesse : {1}654 sur 1 000{/1}",
-  "© {1}2026{/1} How Fast Am I.": "© {1}2026{/1} How Fast Am I."
+  "© {1}2026{/1} How Fast Am I.": "© {1}2026{/1} How Fast Am I.",
+  "Input time": "Temps saisi",
+  "Input distance": "Distance saisie",
+  "100m time": "Temps sur 100 m",
+  "Speed rating": "Score de vitesse",
+  "Speed": "Vitesse"
 }

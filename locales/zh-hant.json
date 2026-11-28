@@ -246,5 +246,10 @@
   "Deleting the account does not cancel or refund purchases. A non-consumable Premium entitlement may be restorable from the same store account if you start again.": "刪除帳户不會取消或退款購買。若重新開始，非消耗性 premium 權限可能從同一商店帳户恢復。",
   "Questions? Contact {1}support@howfastami.app{/1}.": "有問題嗎？請聯繫 {1}support@howfastami.app{/1}。",
   "Effective: 27 November 2026 · Last updated: 27 November 2026": "生效日期：2026年11月27日 · 最後更新：2026年11月27日",
-  "{1}Privacy{/1} · {2}Support{/2}": "{1}私隱{/1} · {2}支援{/2}"
+  "{1}Privacy{/1} · {2}Support{/2}": "{1}私隱{/1} · {2}支援{/2}",
+  "Input time": "輸入時間",
+  "Input distance": "輸入距離",
+  "100m time": "100 米時間",
+  "Speed rating": "速度評分",
+  "Speed": "速度"
 }
