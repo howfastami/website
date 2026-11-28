@@ -297,7 +297,8 @@ h2 { font-size: clamp(2.8rem, 5.5vw, 5.4rem); font-weight: 900; text-transform: 
   position: relative;
   width: min(96%, 410px);
   margin: 0 auto 1.6rem;
-  transform: perspective(760px) rotateY(-10deg);
+  /* Offset the projected center as the right edge comes forward. */
+  transform: translateX(-2.3%) perspective(760px) rotateY(-10deg);
 }
 .result-example-stack {
   grid-area: stack;
