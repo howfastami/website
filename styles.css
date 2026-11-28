@@ -146,7 +146,9 @@ button { font: inherit; }
 .eyebrow::before { content: ''; width: 28px; height: 3px; border-radius: 4px; background: currentColor; box-shadow: 0 0 15px currentColor; }
 h1, h2, h3 { margin: 0; line-height: .94; letter-spacing: -.035em; text-wrap: balance; }
 h1 { max-width: 760px; font-size: clamp(4rem, 8.5vw, 7.5rem); font-weight: 900; text-transform: uppercase; }
-h1 .lit { display: block; color: var(--acid); text-shadow: 0 0 28px rgba(255, 240, 0, .28); }
+h1 .lit { display: block; }
+h1 :is(.lit, .hero-accent) { color: var(--acid); text-shadow: 0 0 28px rgba(255, 240, 0, .28); }
+h1 em.hero-accent { font-style: italic; font-synthesis: style; }
 .hero-copy { max-width: 610px; margin: 1.5rem 0 0; color: #c9cec9; font-size: clamp(1.15rem, 2vw, 1.42rem); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .85rem; margin-top: 2rem; }
 .store-button { min-width: 190px; min-height: 58px; display: inline-flex; align-items: center; gap: .8rem; padding: .68rem 1rem; text-decoration: none; background: #f8f8f2; color: #080909; border: 1px solid rgba(255,255,255,.3); border-radius: 14px; box-shadow: inset 0 -4px 0 rgba(0,0,0,.16), 0 15px 30px rgba(0,0,0,.24); transition: transform 160ms ease, box-shadow 160ms ease; }
