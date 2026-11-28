@@ -245,6 +245,12 @@ h2 { font-size: clamp(2.8rem, 5.5vw, 5.4rem); font-weight: 900; text-transform: 
 }
 .result-example-copy { grid-area: copy; }
 .result-example-copy > :first-child { margin-top: 0; }
+.result-example-input {
+  position: relative;
+  width: min(96%, 410px);
+  margin: 0 auto 1.6rem;
+  transform: perspective(760px) rotateY(10deg);
+}
 .result-example-stack {
   grid-area: stack;
   width: min(100%, 405px);
@@ -286,7 +292,7 @@ h2 { font-size: clamp(2.8rem, 5.5vw, 5.4rem); font-weight: 900; text-transform: 
   pointer-events: none;
 }
 .result-example-media video[data-playing] { opacity: 1; }
-.result-example-stack figcaption {
+.result-example figcaption {
   position: absolute;
   width: 1px;
   height: 1px;
