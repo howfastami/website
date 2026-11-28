@@ -3,8 +3,7 @@
 
   const config = window.HFAI_CONFIG || {};
   const query = new URLSearchParams(window.location.search);
-  const path = window.location.pathname.replace(/\/index\.html$/, '/');
-  const isHome = path === '/' || path.endsWith('/website/');
+  const isHome = document.querySelector('[data-home]') !== null;
   const userAgent = navigator.userAgent || navigator.vendor || '';
   const isAndroid = /android/i.test(userAgent);
   const isIOS =
@@ -29,9 +28,8 @@
       link.setAttribute('aria-disabled', 'true');
       link.classList.add('is-disabled');
       const label = link.querySelector('[data-store-label]');
-      const storeName = link.dataset.store === 'ios' ? 'App Store' : 'Google Play';
-      if (label) label.textContent = `${storeName} link coming soon`;
-      link.setAttribute('aria-label', `${storeName} link coming soon`);
+      if (label && link.dataset.storeUnavailable) label.textContent = link.dataset.storeUnavailable;
+      if (link.dataset.storeUnavailable) link.setAttribute('aria-label', link.dataset.storeUnavailable);
     }
   });
 

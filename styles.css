@@ -105,6 +105,101 @@ button { font: inherit; }
 .nav-toggle { display: none; margin-left: auto; border: 0; background: transparent; color: #fff; width: 44px; height: 44px; padding: 10px; }
 .nav-toggle span { display: block; height: 2px; margin: 5px 0; background: currentColor; border-radius: 2px; }
 
+.language-picker { position: relative; flex: none; }
+.language-picker summary {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  min-height: 44px;
+  border-radius: 8px;
+  padding-inline: .5rem;
+  color: var(--muted);
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+.language-picker summary::-webkit-details-marker { display: none; }
+.language-picker summary svg { width: 1.2rem; height: 1.2rem; }
+.language-picker[open] summary, .language-picker summary:hover { color: var(--acid); }
+.language-picker ul, .language-suggestion {
+  position: absolute;
+  z-index: 2;
+  inset-inline-end: 0;
+  padding: .4rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #111813;
+  box-shadow: var(--shadow);
+}
+.language-picker ul {
+  top: calc(100% + .35rem);
+  width: max-content;
+  min-width: 11rem;
+  max-height: min(22rem, 60vh);
+  overflow: auto;
+  list-style: none;
+  margin: 0;
+}
+.language-picker li a { display: block; padding: .4rem .7rem; border-radius: 6px; text-decoration: none; }
+.language-picker li a:is(:hover, :focus-visible, [aria-current]) { color: var(--acid); background: #fff1; }
+.language-picker-footer { align-self: center; justify-self: start; }
+.language-picker-footer ul { inset: auto; inset-inline-start: 0; bottom: calc(100% + .35rem); }
+.language-suggestion {
+  top: calc(100% + .4rem);
+  inset-inline-end: max(1rem, calc((100% - var(--max)) / 2));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .45rem;
+  max-width: calc(100% - 2rem);
+  padding-inline-start: .8rem;
+  color: var(--muted);
+}
+.language-suggestion[hidden], .header-inner:has(.language-picker[open]) .language-suggestion { display: none; }
+.language-suggestion a { color: var(--acid); }
+.language-suggestion button {
+  color: var(--muted);
+  border: 0;
+  background: transparent;
+  font-size: 1.25rem;
+  min-width: 44px;
+  min-height: 44px;
+  cursor: pointer;
+}
+.translation-notice { font-size: .95rem; color: var(--muted); }
+html:not(:lang(en)) :is(h1, h2, h3, .stat) { overflow-wrap: anywhere; }
+html:not(:lang(en)) .hero-grid h1 { font-size: clamp(3rem, min(7vw, 10svh), 6rem); }
+[dir="rtl"] .brand { direction: ltr; }
+[dir="rtl"] .result-example-media { direction: ltr; }
+[dir="rtl"] .result-example-stack figure {
+  transform: perspective(650px) rotateX(20deg) rotateY(-24deg) rotateZ(12deg);
+}
+[dir="rtl"] .dash-toggle-tilt {
+  transform: perspective(610px) rotateX(14deg) rotateY(23deg) rotateZ(-11deg);
+}
+
+@media (max-width: 700px) {
+  html:not(:lang(en)) .hero-grid h1 { font-size: clamp(2.6rem, 13vw, 5rem); }
+  html:not(:lang(en)) .download-card h2 { font-size: clamp(2.4rem, 10vw, 3.5rem); }
+}
+
+@media (max-width: 1100px) {
+  .header-inner { gap: .65rem; }
+  .header-inner .brand { margin-inline-end: auto; }
+  .nav-toggle { margin-left: 0; }
+  html:not(:lang(en)) .nav-toggle { display: block; }
+  html:not(:lang(en)) .nav {
+    position: absolute;
+    inset: 100% 0 auto;
+    display: none;
+    margin: 0;
+    padding: 1rem;
+    background: #080a0a;
+    border-bottom: 1px solid var(--line);
+  }
+  html:not(:lang(en)) .nav[data-open='true'] { display: grid; }
+}
+
 .redirect-panel {
   position: fixed;
   inset: auto 1rem 1rem;

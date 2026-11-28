@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#080a0a" name="theme-color"/>
+<meta content="別の距離で計測した短距離走の記録から、100 mのタイムを予測。記録を比較して、スタートや計測方法、走行条件が予測に与える影響を確認できます。" name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://howfastami.app/ja/" property="og:url"/>
+<meta content="How Fast Am I? — 100 m短距離走タイム予測" property="og:title"/>
+<meta content="30 m、60 mなどの短距離走を計測しましたか？ その記録から100 mの予想タイムがわかります。" property="og:description"/>
+<meta content="https://howfastami.app/assets/splash-screen.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<title>How Fast Am I? — 100 m短距離走タイム予測</title>
+<link href="https://howfastami.app/ja/" rel="canonical"/>
+<link href="../assets/app-icon.png" rel="icon"/>
+<link href="../assets/app-icon.png" rel="apple-touch-icon"/>
+<link href="../styles.css?v=locale-1" rel="stylesheet"/>
+<script defer="" src="../config.js"></script>
+<script defer="" src="../app.js?v=locale-1"></script>
+<!-- i18n:alternates --><link rel="alternate" hreflang="en" href="https://howfastami.app/">
+<link rel="alternate" hreflang="es" href="https://howfastami.app/es/">
+<link rel="alternate" hreflang="fr" href="https://howfastami.app/fr/">
+<link rel="alternate" hreflang="de" href="https://howfastami.app/de/">
+<link rel="alternate" hreflang="pt-BR" href="https://howfastami.app/pt-br/">
+<link rel="alternate" hreflang="zh-Hans" href="https://howfastami.app/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://howfastami.app/zh-hant/">
+<link rel="alternate" hreflang="ja" href="https://howfastami.app/ja/">
+<link rel="alternate" hreflang="ko" href="https://howfastami.app/ko/">
+<link rel="alternate" hreflang="it" href="https://howfastami.app/it/">
+<link rel="alternate" hreflang="ar" href="https://howfastami.app/ar/">
+<link rel="alternate" hreflang="hi" href="https://howfastami.app/hi/">
+<link rel="alternate" hreflang="ru" href="https://howfastami.app/ru/">
+<link rel="alternate" hreflang="id" href="https://howfastami.app/id/">
+<link rel="alternate" hreflang="bn" href="https://howfastami.app/bn/">
+<link rel="alternate" hreflang="tr" href="https://howfastami.app/tr/">
+<link rel="alternate" hreflang="x-default" href="https://howfastami.app/"><!-- /i18n:alternates --><script defer="" src="../language.js?v=locale-1"></script></head>
+<body>
+<a class="skip-link" href="#main">コンテンツへスキップ</a>
+<header class="site-header">
+<div class="wrap header-inner">
+<a aria-label="How Fast Am I? ホーム" class="brand" href="./"><img alt="" src="../assets/app-icon.png"/><span>How Fast <em>Am I?</em></span></a>
+<button aria-expanded="false" aria-label="ナビゲーションを開く" class="nav-toggle" data-nav-toggle="" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="メインナビゲーション" class="nav" data-nav="" data-open="false">
+<a href="#features">機能</a><a href="#how-it-works">どうやって働くか</a><a href="./support.html">サポート</a><a class="nav-cta button-sheen" href="#download">アプリを入手</a>
+</nav><!-- i18n:header --><details class="language-picker"><summary aria-label="言語を選択してください: 日本語"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><span aria-hidden="true">JA</span></summary><ul aria-label="言語を選択してください"><li><a href="../" hreflang="en" lang="en" dir="auto" data-locale="en">English</a></li><li><a href="../es/" hreflang="es" lang="es" dir="auto" data-locale="es">Español</a></li><li><a href="../fr/" hreflang="fr" lang="fr" dir="auto" data-locale="fr">Français</a></li><li><a href="../de/" hreflang="de" lang="de" dir="auto" data-locale="de">Deutsch</a></li><li><a href="../pt-br/" hreflang="pt-BR" lang="pt-BR" dir="auto" data-locale="pt-br">Português (Brasil)</a></li><li><a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans" dir="auto" data-locale="zh-hans">简体中文</a></li><li><a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant" dir="auto" data-locale="zh-hant">繁體中文</a></li><li><a href="./" hreflang="ja" lang="ja" dir="auto" data-locale="ja" aria-current="page">日本語</a></li><li><a href="../ko/" hreflang="ko" lang="ko" dir="auto" data-locale="ko">한국어</a></li><li><a href="../it/" hreflang="it" lang="it" dir="auto" data-locale="it">Italiano</a></li><li><a href="../ar/" hreflang="ar" lang="ar" dir="rtl" data-locale="ar">العربية</a></li><li><a href="../hi/" hreflang="hi" lang="hi" dir="auto" data-locale="hi">हिन्दी</a></li><li><a href="../ru/" hreflang="ru" lang="ru" dir="auto" data-locale="ru">Русский</a></li><li><a href="../id/" hreflang="id" lang="id" dir="auto" data-locale="id">Bahasa Indonesia</a></li><li><a href="../bn/" hreflang="bn" lang="bn" dir="auto" data-locale="bn">বাংলা</a></li><li><a href="../tr/" hreflang="tr" lang="tr" dir="auto" data-locale="tr">Türkçe</a></li></ul></details><!-- /i18n:header -->
+</div>
+</header>
+<aside aria-live="polite" class="redirect-panel" data-redirect-panel="" hidden="">
+<p><strong><span data-redirect-count="">1.6</span>s</strong>でアプリストアを開く</p>
+<a data-redirect-link="" href="#download">今すぐ開く</a>
+<button data-redirect-cancel="" type="button">ここに留まります</button>
+</aside>
+<main data-home="" id="main">
+<section class="hero landing-hero">
+<div aria-hidden="true" class="track-lines"></div>
+<div class="wrap hero-grid">
+<div>
+<p class="eyebrow">スプリント時間変換機</p>
+<h1>あなたの<span class="hero-accent">速さ</span>は<br/>どれくらい？<br/><em class="hero-accent">本当の実力は？</em></h1>
+<p class="hero-copy">30 m、60 mなどの短距離走を計測したら、距離とタイムを入力して100 mの予想タイムを確認できます。スタートや計測方法、走路の種類を指定すれば、条件に合った予測になります。</p>
+<div class="hero-actions" id="availability">
+<a aria-label="App Storeで「How Fast Am I」をダウンロード" class="store-button" data-store="ios" data-store-unavailable="App Storeリンクは間もなく公開されます" href="#availability">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M17.1 12.5c0-2.7 2.2-4 2.3-4.1-1.3-1.9-3.3-2.1-4-2.1-1.7-.2-3.3 1-4.1 1-.8 0-2.1-1-3.5-1-1.8 0-3.5 1.1-4.5 2.7-1.9 3.3-.5 8.2 1.4 10.9.9 1.3 2 2.8 3.5 2.8 1.4-.1 1.9-.9 3.6-.9s2.2.9 3.7.9 2.5-1.3 3.4-2.7c1.1-1.5 1.5-3 1.5-3.1-.1 0-3.3-1.3-3.3-4.4ZM14.3 4.5c.8-1 1.3-2.3 1.2-3.5-1.2.1-2.6.8-3.4 1.7-.7.8-1.4 2.2-1.2 3.4 1.3.1 2.6-.6 3.4-1.6Z"></path></svg>
+<span><small>ダウンロード</small><strong data-store-label="">App Store</strong></span>
+</a>
+<a aria-label="Google Playで「How Fast Am I」を取得" class="store-button" data-store="android" data-store-unavailable="Google Playリンクは間もなく公開されます" href="#availability">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="m3.2 2.6 10.4 9.3L3.2 21.3c-.5-.4-.8-1-.8-1.8V4.4c0-.8.3-1.4.8-1.8Zm11.6 10.3 2.4 2.1-11.3 6.4 8.9-8.5Zm3.8-2.1c.7.4 1 .8 1 1.2s-.3.8-1 1.2l-1.7 1-2.8-2.5 2.8-2.5 1.7 1.6ZM5.9 2.5l11.3 6.4-2.4 2.1-8.9-8.5Z"></path></svg>
+<span><small>ここにあります</small><strong data-store-label="">Google Play</strong></span>
+</a>
+</div>
+<p class="hero-note"><em style="font-synthesis: style;">ウォレットは必要ありません。距離と時間から始めてください。</em></p>
+</div>
+<div class="hero-next"><a class="nav-cta button-sheen" href="#how-it-works">使い方を見る</a></div>
+<div aria-label="How Fast Am I アプリのプレビュー" class="phone-stage" role="group">
+<div aria-hidden="true" class="phone-glow"></div>
+<div class="phone-preview" data-phone-preview="">
+<img alt="How Fast Am I アプリスクリーン1 of 3" fetchpriority="high" height="672" src="../assets/phone-1.webp" width="355"/>
+<img alt="How Fast Am I アプリスクリーン2 of 3" aria-hidden="true" fetchpriority="low" height="672" hidden="" src="../assets/phone-2.webp" width="355"/>
+<img alt="How Fast Am I アプリスクリーン3 of 3" aria-hidden="true" fetchpriority="low" height="672" hidden="" src="../assets/phone-3.webp" width="355"/>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="features">
+<div class="wrap">
+<div class="section-heading" data-reveal=""><h2>異なる距離のスプリントを比較してください。</h2><p class="section-intro">100mの推定値を使用して、短距離スプリントを共通のスケールに置き、時間とともにあなたのパフォーマンスの変化を追跡してください。</p></div>
+<div class="feature-grid">
+<article class="feature-card" data-reveal=""><div aria-hidden="true" class="feature-icon">01</div><h3>タイム付きスプリントを変換してください</h3><p>距離と時間から始めてください。より詳しくする場合は、スタートタイプ、タイミング方法、表面、靴、風、または海拔を追加してください。</p></article>
+<article class="feature-card" data-reveal=""><div aria-hidden="true" class="feature-icon">02</div><h3>あなたの走行速度を見る</h3><p>平均速度をmphまたはkm/hで見つけて、スピードスコアや年齢調整された比較、共有可能な結果と一緒に文脈に置きましょう。</p></article>
+<article class="feature-card" data-reveal=""><div aria-hidden="true" class="feature-icon">03</div><h3>建設。トレーニング。レース。</h3><p>アスリートを採用し、リレーチームを整え、属性を発展させ、個人ベストを追い求め、リーダーボードを上り、その道のちにバッジを収集してください。</p></article>
+</div>
+</div>
+</section>
+<section class="section" id="how-it-works">
+<div class="wrap">
+<div class="section-heading" data-reveal=""><h2>100m推定の仕組み</h2></div>
+<div class="steps">
+<article class="step" data-reveal=""><h3>走行を入力</h3><p>記録した距離と時間を入力してください。シンプルモードで迅速な推定を行います。</p></article>
+<article class="step" data-reveal=""><h3>文脈を追加</h3><p>詳細モードでは、アプリにスタート方法と時計の起動方法を教えてください。フライイングスタートは走り込みを、スタンドストアートは静止からの加速を含みます。</p></article>
+<article class="step" data-reveal=""><h3>100mの推定値を取得する</h3><p>推定値を用いて異なる距離のスプリントを比較し、自分の進捗を追跡してください。</p></article>
+</div>
+<div class="result-example" id="result-example">
+<div class="result-example-copy">
+<figure class="result-example-input">
+<div class="result-example-media">
+<img alt="" height="246" loading="lazy" src="../assets/result-example/inputs.png" width="820"/>
+<video aria-hidden="true" data-result-animation="" muted="" playsinline="" preload="none" src="../assets/result-example/inputs.mp4"></video>
+</div>
+<figcaption>入力時間: <strong>7.50秒</strong> · 入力距離: <strong>60メートル</strong></figcaption>
+</figure>
+<p class="section-intro"><strong>計算例：60 mを7.50秒で走った場合、100 mの予想タイムは11.64秒です。</strong></p>
+<p class="section-intro">アプリの「陸上大会」モードで「男性」を選び、60 mと7.50秒を入力します。スターティングブロック、電動計時、陸上スパイク、乾いたゴム製トラック、無風を指定し、年齢と標高は空欄のままにしてください。</p>
+<p><small><em style="font-synthesis: style;">11.64秒は予測値です。正式な100 mの記録を得るには、実際に100 mのレースを走り、計時する必要があります。</em></small></p>
+</div>
+<div aria-label="60m例のアニメーション結果" class="result-example-stack" role="group">
+<figure class="result-example-scoreboard">
+<div class="result-example-media">
+<img alt="" height="246" loading="lazy" src="../assets/result-example/scoreboard.png" width="820"/>
+<video aria-hidden="true" data-result-animation="" muted="" playsinline="" preload="none" src="../assets/result-example/scoreboard.mp4"></video>
+</div>
+<figcaption>100m推定値: <strong>11.64秒</strong> · 速度評価: <strong>654</strong></figcaption>
+</figure>
+<figure>
+<div class="result-example-media">
+<img alt="" height="456" loading="lazy" src="../assets/result-example/speed.png" width="820"/>
+<video aria-hidden="true" data-result-animation="" muted="" playsinline="" preload="none" src="../assets/result-example/speed.mp4"></video>
+</div>
+<figcaption>60m平均速度: <strong>28.8 km/h</strong></figcaption>
+</figure>
+<figure>
+<div class="result-example-media">
+<img alt="" height="556" loading="lazy" src="../assets/result-example/rating.png" width="820"/>
+<video aria-hidden="true" data-result-animation="" muted="" playsinline="" preload="none" src="../assets/result-example/rating.mp4"></video>
+</div>
+<figcaption>スピード評価: <strong>654/1000</strong></figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="dash-example">
+<div class="wrap dash-layout">
+<div class="section-heading">
+<p class="section-kicker">一つの使用方法はこれです</p>
+<h2>40ヤードダッシュタイムを共通スケールに置く</h2>
+<p class="section-intro"><strong>40ヤードを4.50秒で走ると、全区間の平均速度は18.2 mph（29.3 km/h）</strong>です。アプリの40ヤード走モードを使えば、計測方法や走行条件を考慮した100 mの予想タイムがわかります。</p>
+</div>
+<div class="dash-toggle" data-reveal="">
+<div class="dash-toggle-hover">
+<div class="dash-toggle-tilt">
+<img alt="" height="496" loading="lazy" src="../assets/dash-selector/dash-off.png" width="352"/>
+<img alt="アプリの照明付き40ydモードセレクター" class="dash-toggle-lit" height="496" loading="lazy" src="../assets/dash-selector/dash-on.png" width="352"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="sharing-title" class="section" id="sharing">
+<div class="wrap share-layout">
+<div>
+<p class="section-kicker">スプリントを共有する</p>
+<h2 id="sharing-title">あなたのビデオにあなたのスピードを刻む</h2>
+<p class="section-intro">短距離走の記録を背景が透明なステッカーとして保存し、自分の写真や動画に重ねられます。InstagramのストーリーズやTikTokに投稿できます。記録だけを一本の動画として保存することもできます。</p>
+</div>
+<div aria-label="スプリント結果の共有予告" class="share-preview" role="group">
+<div class="phone-preview" data-phone-preview="">
+<img alt="スプリント結果の共有予告 1 of 4" height="643" loading="lazy" src="../assets/share-1.webp" width="300"/>
+<img alt="スプリント結果の共有予告 2 of 4" aria-hidden="true" height="643" hidden="" loading="lazy" src="../assets/share-2.webp" width="300"/>
+<img alt="スプリント結果の共有予告 3 of 4" aria-hidden="true" height="643" hidden="" loading="lazy" src="../assets/share-3.webp" width="300"/>
+<img alt="スプリント結果の共有予告 4 of 4" aria-hidden="true" height="643" hidden="" loading="lazy" src="../assets/share-4.webp" width="300"/>
+</div>
+</div>
+</div>
+</section>
+<section class="section race-section">
+<div class="wrap"><div class="race-panel" data-reveal=""><div class="race-content"><p class="section-kicker">クワッドレース</p><h2><span>リレーチームを組みましょう.</span></h2><p>補完的な強みを持つリレーチームを編成してください。フォームを管理し、変換を鋭くし、レース条件を処理し、四人のチームが重要な瞬間に成果を出すかどうかを確認してください。</p><div aria-label="ゲームハイライト" class="stats"><div class="stat"><strong>4×100</strong><span>レースレレー</span></div><div class="stat"><strong>グローバル</strong><span>レーダー</span></div><div class="stat"><strong>100+</strong><span>発見できるアスリート</span></div></div></div></div></div>
+</section>
+<section class="section download" id="download">
+<div class="wrap">
+<div class="download-card" data-reveal="">
+<div class="download-content">
+<p class="section-kicker" style="color:#090a09">準備完了</p>
+<h2>100mの推定値を取得してください。</h2>
+<p>次回のスプリントの距離と時間をお持ちください。</p>
+<div class="hero-actions">
+<a class="store-button" data-store="ios" data-store-unavailable="App Storeリンクは間もなく公開されます" href="#download"><span><small>ダウンロード</small><strong data-store-label="">App Store</strong></span></a>
+<a class="store-button" data-store="android" data-store-unavailable="Google Playリンクは間もなく公開されます" href="#download"><span><small>ここにあります</small><strong data-store-label="">Google Play</strong></span></a>
+</div>
+</div>
+<img alt="" class="spike-pile" height="1199" loading="lazy" src="../assets/spike-piles.png" width="1312"/>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div class="wrap"><div class="footer-grid"><div><a class="brand" href="./"><img alt="" src="../assets/app-icon.png"/><span>How Fast <em>Am I?</em></span></a><p>アスリートとコーチのために、他の距離のタイムから100mタイムを推定するためのスプリントタイムコンバーター。</p></div><div><h3>アプリ</h3><div class="footer-links"><a href="#features">機能</a><a href="#download">ダウンロード</a><a href="./support.html">サポート</a><a href="./account-deletion.html">アカウント削除</a></div></div><div><h3>法規</h3><div class="footer-links"><a href="./privacy.html">プライバシーポリシー</a><a href="./terms.html">利用規約</a><a data-email="support" href="mailto:support@howfastami.app">お問い合わせ</a></div></div></div><div class="footer-bottom"><span>© <span data-year="">2026</span> How Fast Am I. すべての権利を留保します。</span><span>世界中の人々のために作られた速さのためのアプリです。</span><!-- i18n:footer --><details class="language-picker language-picker-footer"><summary aria-label="言語を選択してください: 日本語"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/></svg><span aria-hidden="true">日本語</span></summary><ul aria-label="言語を選択してください"><li><a href="../" hreflang="en" lang="en" dir="auto" data-locale="en">English</a></li><li><a href="../es/" hreflang="es" lang="es" dir="auto" data-locale="es">Español</a></li><li><a href="../fr/" hreflang="fr" lang="fr" dir="auto" data-locale="fr">Français</a></li><li><a href="../de/" hreflang="de" lang="de" dir="auto" data-locale="de">Deutsch</a></li><li><a href="../pt-br/" hreflang="pt-BR" lang="pt-BR" dir="auto" data-locale="pt-br">Português (Brasil)</a></li><li><a href="../zh-hans/" hreflang="zh-Hans" lang="zh-Hans" dir="auto" data-locale="zh-hans">简体中文</a></li><li><a href="../zh-hant/" hreflang="zh-Hant" lang="zh-Hant" dir="auto" data-locale="zh-hant">繁體中文</a></li><li><a href="./" hreflang="ja" lang="ja" dir="auto" data-locale="ja" aria-current="page">日本語</a></li><li><a href="../ko/" hreflang="ko" lang="ko" dir="auto" data-locale="ko">한국어</a></li><li><a href="../it/" hreflang="it" lang="it" dir="auto" data-locale="it">Italiano</a></li><li><a href="../ar/" hreflang="ar" lang="ar" dir="rtl" data-locale="ar">العربية</a></li><li><a href="../hi/" hreflang="hi" lang="hi" dir="auto" data-locale="hi">हिन्दी</a></li><li><a href="../ru/" hreflang="ru" lang="ru" dir="auto" data-locale="ru">Русский</a></li><li><a href="../id/" hreflang="id" lang="id" dir="auto" data-locale="id">Bahasa Indonesia</a></li><li><a href="../bn/" hreflang="bn" lang="bn" dir="auto" data-locale="bn">বাংলা</a></li><li><a href="../tr/" hreflang="tr" lang="tr" dir="auto" data-locale="tr">Türkçe</a></li></ul></details><!-- /i18n:footer --></div></div></footer>
+</body>
+</html>
