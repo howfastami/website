@@ -235,19 +235,46 @@ h2 { font-size: clamp(2.8rem, 5.5vw, 5.4rem); font-weight: 900; text-transform: 
 
 .result-example {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
-  gap: 1.25rem;
-  max-width: 860px;
-  margin-top: 2rem;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1fr);
+  grid-template-areas: 'stack copy';
+  align-items: center;
+  gap: clamp(2rem, 6vw, 5.5rem);
+  max-width: 1050px;
+  margin-top: clamp(2rem, 5vw, 4rem);
   scroll-margin-top: 95px;
 }
-.result-example figure { width: 100%; max-width: 410px; margin: 0; }
-.result-example-scoreboard { grid-column: 1 / -1; }
+.result-example-copy { grid-area: copy; }
+.result-example-copy > :first-child { margin-top: 0; }
+.result-example-stack {
+  grid-area: stack;
+  width: min(100%, 405px);
+  justify-self: center;
+  padding: 1.5rem 2rem;
+  isolation: isolate;
+}
+.result-example-stack figure {
+  position: relative;
+  margin: 0;
+  transform: perspective(950px) rotateY(-11deg) rotateZ(13deg);
+}
+.result-example-stack .result-example-scoreboard {
+  z-index: 3;
+  width: 88%;
+  margin-inline-start: 12%;
+}
+.result-example-stack figure:nth-child(2) {
+  z-index: 2;
+  width: 95%;
+  margin-block-start: -1rem;
+  margin-inline-start: 6%;
+}
+.result-example-stack figure:nth-child(3) { margin-block-start: -1.4rem; }
 .result-example-media {
   position: relative;
   overflow: hidden;
   border-radius: 16px;
   background: #101510;
+  box-shadow: 0 16px 24px #000b, 0 2px 9px #0009;
 }
 .result-example-media img { width: 100%; height: auto; }
 .result-example-media video {
@@ -259,8 +286,21 @@ h2 { font-size: clamp(2.8rem, 5.5vw, 5.4rem); font-weight: 900; text-transform: 
   pointer-events: none;
 }
 .result-example-media video[data-playing] { opacity: 1; }
-.result-example figcaption { padding: .45rem .6rem 0; color: var(--muted); }
-.result-example figcaption strong { color: var(--ink); }
+.result-example-stack figcaption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+@media (max-width: 700px) {
+  .result-example {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: 'copy' 'stack';
+    gap: 1rem;
+  }
+}
 
 .download { overflow: hidden; }
 .download-card { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .65fr); align-items: center; gap: clamp(1.5rem, 4vw, 3rem); min-height: 470px; padding: clamp(2rem, 6vw, 5rem); border-radius: 38px; overflow: hidden; color: #050605; background: var(--acid); box-shadow: 0 30px 90px rgba(255,240,0,.12); }
