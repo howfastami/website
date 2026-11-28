@@ -178,7 +178,8 @@ h1 em.hero-accent { font-style: italic; font-synthesis: style; }
 .phone-preview > img { object-fit: contain; }
 
 @media (prefers-reduced-motion: no-preference) {
-  .phone-stage .phone-preview {
+  .phone-stage .phone-preview,
+  .share-preview .phone-preview {
     animation: hero-phone-hover 9s ease-in-out infinite;
   }
 }
