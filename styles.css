@@ -204,8 +204,8 @@ h1 em.hero-accent { font-style: italic; font-synthesis: style; }
 
 .dash-layout {
   display: grid;
-  grid-template-columns: minmax(220px, .65fr) minmax(0, 1fr);
-  grid-template-areas: 'toggle copy';
+  grid-template-columns: minmax(0, 1fr) minmax(220px, .65fr);
+  grid-template-areas: 'copy toggle';
   align-items: center;
   gap: clamp(1.75rem, 6vw, 5rem);
 }
@@ -283,8 +283,8 @@ h2 { font-size: clamp(2.8rem, 5.5vw, 5.4rem); font-weight: 900; text-transform: 
 
 .result-example {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, .95fr);
-  grid-template-areas: 'copy stack';
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1fr);
+  grid-template-areas: 'stack copy';
   align-items: center;
   gap: clamp(2rem, 6vw, 5.5rem);
   max-width: 1050px;
